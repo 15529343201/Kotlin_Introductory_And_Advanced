@@ -80,3 +80,32 @@
 - 前端
 - Android
 - Native
+
+### 那么Kotlin究竟是What?
+&emsp;&emsp;Kotlin就是一门可以运行在Java虚拟机、Android、浏览器上的
+静态语言它与Java 100%兼容,如果你对Java非常熟悉,那么你就会发现Kotlin除了自己
+的标准库之外,大多仍然使用经典的Java集合框架<br>
+### Kotlin的发展历程
+- 2010立项
+- 2011.6对外公开
+- 2012.2开源
+- 2013.8支持Android Studio
+- 2014.6全新的开源web站点和域名Kotlinlang.org
+- 2016.2发布1.0
+- 2016.9发布1.0.4,支持apt
+### 学习目标
+- 学会使用Kotlin
+- 熟悉Java生态
+- 了解一些特性的背后实现
+### 必备知识
+- 熟悉计算机基础,操作系统相关的知识
+- 了解Java及其生态
+- 了解Java工程组织的常用工具
+- 熟悉Intellij idea
+### 参考资料
+- 官方文档:https://kotlinlang.org/docs/reference/
+- Kotlin源码:https://github.com/JetBrains/kotlin
+- Kotlin官博:https://blog.jetbrains.com/kotlin
+- Kotlin微信公众号:Kotlin
+- Gradle文档:https://docs.gradle.org/current/userguide/userguide.html
+
