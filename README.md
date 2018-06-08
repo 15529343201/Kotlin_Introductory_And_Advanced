@@ -129,3 +129,9 @@
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/5.PNG)<br>
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/6.PNG)<br>
 
+- 包(package)
+- 区间(range)
+
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/7.PNG)<br>
+
+
