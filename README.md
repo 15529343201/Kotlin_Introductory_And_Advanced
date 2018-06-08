@@ -123,5 +123,9 @@
 - 基本数据类型与字符串
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/3.PNG)<br>
-
+- Kotlin中类和对象初始
+- 空类型和智能类型转换
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/4.PNG)<br>
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/5.PNG)<br>
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/6.PNG)<br>
 
