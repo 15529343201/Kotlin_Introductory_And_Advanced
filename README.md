@@ -133,5 +133,5 @@
 - 区间(range)
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/7.PNG)<br>
-
+- 数组(array)
 
