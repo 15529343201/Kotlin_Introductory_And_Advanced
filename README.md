@@ -108,4 +108,9 @@
 - Kotlin官博:https://blog.jetbrains.com/kotlin
 - Kotlin微信公众号:Kotlin
 - Gradle文档:https://docs.gradle.org/current/userguide/userguide.html
+### chapter2 数据类型
+- 认识基本类型
+- 初步认识类及其相关概念
+- 认识区间和数组
+
 
