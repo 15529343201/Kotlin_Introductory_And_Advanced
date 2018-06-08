@@ -113,4 +113,10 @@
 - 初步认识类及其相关概念
 - 认识区间和数组
 
+- Boolean数据类型
+- Number数据类型
+
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/1.PNG)<br>
+- 拆箱装箱与Char数据类型
+
 
