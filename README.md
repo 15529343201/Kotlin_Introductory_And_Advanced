@@ -194,4 +194,53 @@ sum.invoke(2,3)
 - Lambda只有一个参数可默认为it
 - 入参、返回值与形参一致的函数可以用函数引用的方式作为实参传入
 
+### 类成员(成员变量、成员方法)
+1.什么是类成员<br>
+- 属性:或者说成员变量,类范围内的变量
+- 方法:或者说成员函数,类范围内的函数
+
+2.函数和方法的区别<br>
+- 函数强调功能本身,不考虑从属
+- 方法的称呼通常是从类的角度出发
+- 叫法不同,不要纠结
+
+3.定义方法<br>
+- 写法与普通函数完全一致
+- 举例:
+
+```
+class Hello{
+	fun sayHello(name:String)=println("Hello,$name")
+}
+```
+
+4.定义属性<br>
+- 构造方法参数中val/var修饰的都是属性
+- 类内部也可以定义属性
+- 举例
+
+```
+class Hello(val aField:Int,notAField:Int){
+	var anotherField:Float=3f
+}
+```
+
+5.属性访问控制<br>
+- 属性可以定义getter/setter
+- 举例:
+
+```
+val a:Int = 0
+get()=field
+var b:Float = 0f
+set(value){field = value}
+```
+
+6.属性初始化<br>
+- 属性的初始化尽量在构造方法中完成
+- 无法在构造方法中初始化,尝试降级为局部变量
+- var用lateinit延迟初始化,val用lazy
+- 可空类型谨慎用null直接初始化
+
+
 
