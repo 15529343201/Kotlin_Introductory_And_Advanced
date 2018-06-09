@@ -122,10 +122,6 @@
 ### 包(package)
 ### 区间(range)
 ### 数组(array)
-<<<<<<< HEAD
-
-=======
->>>>>>> chapter4
 
 # chapter3 程序结构
 ### 常量与变量(val,var)
@@ -137,17 +133,6 @@
 - var=variable
 - 举例: var x="HelloWorld"//定义变量 x="HiWorld"//再次赋值
 
-### Kotlin中类和对象初始
-### 空类型和智能类型转换
-### 包(package)
-### 区间(range)
-### 数组(array)
-
-# chapter3 程序结构
-<<<<<<< HEAD
-=======
-
->>>>>>> chapter4
 - 编译器可以推导量的类型:`val string="Hello"`//推导出String类型 `val int=5`//Int类型 `var x=getString()+5` //String类型
 
 ### 函数(function)
@@ -344,8 +329,6 @@ sum(arg1=2,arg2=3)
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter3/image/8.PNG)<br>
 
-<<<<<<< HEAD
-=======
 # chapter4 面向对象
 ### 面向对象-抽象类与接口(abstract,interface)
 1.面向对象的基本概念<br>
@@ -494,6 +477,4 @@ v1.1,子类只需要与密封类在同一个文件中
 
 
 
-
->>>>>>> chapter4
 
