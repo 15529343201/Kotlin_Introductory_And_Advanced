@@ -391,4 +391,13 @@ interface InputDevice{
 - 子类(实现类)必须覆写冲突方法
 - `super<[父类(接口)名]>.[方法名]([参数列表])`
 
-
+### 类及其成员的可见性(private,protected,internal,public)
+可见性对比:<br>
+```
+Kotlin                         Java
+private                        private
+protected                      protected
+-                              default(包内可见)
+internal(模块内可见)           -
+public                         public
+```
