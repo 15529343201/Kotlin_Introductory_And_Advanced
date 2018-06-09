@@ -108,30 +108,42 @@
 - Kotlin官博:https://blog.jetbrains.com/kotlin
 - Kotlin微信公众号:Kotlin
 - Gradle文档:https://docs.gradle.org/current/userguide/userguide.html
-### chapter2 数据类型
+# chapter2 数据类型
 - 认识基本类型
 - 初步认识类及其相关概念
 - 认识区间和数组
 
-- Boolean数据类型
-- Number数据类型
+### Boolean数据类型
+### Number数据类型
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/1.PNG)<br>
-- 拆箱装箱与Char数据类型
+### 拆箱装箱与Char数据类型
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/2.PNG)<br>
-- 基本数据类型与字符串
+### 基本数据类型与字符串
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/3.PNG)<br>
-- Kotlin中类和对象初始
-- 空类型和智能类型转换
+### Kotlin中类和对象初始
+### 空类型和智能类型转换
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/4.PNG)<br>
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/5.PNG)<br>
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/6.PNG)<br>
 
-- 包(package)
-- 区间(range)
+### 包(package)
+### 区间(range)
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/7.PNG)<br>
-- 数组(array)
+### 数组(array)
+
+# chapter3 程序结构
+### 常量与变量(val,var)
+- val=value,值类型
+- 类似Java的final
+- 不可能重复赋值
+- 举例 运行时常量:val x=getX() 编译期常量:const val x=2
+
+- var=variable
+- 举例: var x="HelloWorld"//定义变量 x="HiWorld"//再次赋值
+
+- 编译器可以推导量的类型:`val string="Hello"`//推导出String类型 `val int=5`//Int类型 `var x=getString()+5` //String类型
 
