@@ -133,18 +133,10 @@
 - var=variable
 - 举例: var x="HelloWorld"//定义变量 x="HiWorld"//再次赋值
 
-
-![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/3.PNG)<br>
 ### Kotlin中类和对象初始
 ### 空类型和智能类型转换
-![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/4.PNG)<br>
-![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/5.PNG)<br>
-![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/6.PNG)<br>
-
 ### 包(package)
 ### 区间(range)
-
-![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/7.PNG)<br>
 ### 数组(array)
 
 # chapter3 程序结构
