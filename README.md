@@ -336,3 +336,8 @@ sum(arg1=2,arg2=3)
 - 可以为任意位置的参数指定默认值
 - 传参时,如果有歧义,需要使用具名参数
 
+### 命令行计数器
+### 导出可执行程序
+
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter3/image/8.PNG)<br>
+
