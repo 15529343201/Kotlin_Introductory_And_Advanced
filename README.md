@@ -147,3 +147,22 @@
 
 - 编译器可以推导量的类型:`val string="Hello"`//推导出String类型 `val int=5`//Int类型 `var x=getString()+5` //String类型
 
+### 函数(function)
+1.以特定功能组织起来的代码块<br>
+- fun [函数名]([参数列表]):[返回值类型]{[函数体]}
+- fun [函数名]([参数列表])=[表达式]
+
+2.举例<br>
+- `fun sayHi(name:String){println("Hi,$name")}`
+- `fun sayHi(name:String)=println("Hi,$name")`
+
+3.匿名函数<br>
+- 无名氏一直是神一样的存在
+- fun([参数列表])
+- 举例: `val sayHi=fun(name:String)=println("Hi,$name")`
+
+4.编写函数的注意事项<br>
+- 功能要单一
+- 函数名要做到顾名思义
+- 参数个数不要太多
+
