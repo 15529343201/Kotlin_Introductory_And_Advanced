@@ -166,3 +166,32 @@
 - 函数名要做到顾名思义
 - 参数个数不要太多
 
+### Lambda表达式
+1.什么是Lambda表达式<br>
+- 匿名函数
+- 写法:`{[参数列表]->[函数体,最后一行是返回值]}`
+- 举例:`var sum={a:Int,b:Int->a+b}`
+
+2.Lambda的类型表示举例<br>
+- `()->Unit` 无参,返回值为Unit
+- `(Int)->Int` 传入整形,返回一个整形
+- `(String,(String)->String)->Boolean` 传入字符串、Lambda表达式,返回Boolean
+
+3.Lambda表达式的调用<br>
+- 用()进行调用
+- 等价于invoke()
+- 举例
+
+```
+val sum={a:Int,b:Int->a+b}
+sum(2,3)
+sum.invoke(2,3)
+```
+
+4.Lambda表达式的简化<br>
+- 函数参数调用时最后一个Lambda可以移出去
+- 函数参数只有一个Lambda,调用时小括号可省略
+- Lambda只有一个参数可默认为it
+- 入参、返回值与形参一致的函数可以用函数引用的方式作为实参传入
+
+
