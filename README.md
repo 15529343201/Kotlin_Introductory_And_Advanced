@@ -115,8 +115,6 @@
 
 ### Boolean数据类型
 ### Number数据类型
-<<<<<<< HEAD
-=======
 ### 拆箱装箱与Char数据类型
 ### 基本数据类型与字符串
 ### Kotlin中类和对象初始
@@ -124,7 +122,6 @@
 ### 包(package)
 ### 区间(range)
 ### 数组(array)
->>>>>>> chapter3
 
 # chapter3 程序结构
 ### 常量与变量(val,var)
@@ -136,7 +133,7 @@
 - var=variable
 - 举例: var x="HelloWorld"//定义变量 x="HiWorld"//再次赋值
 
-<<<<<<< HEAD
+
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter2/image/3.PNG)<br>
 ### Kotlin中类和对象初始
 ### 空类型和智能类型转换
@@ -151,7 +148,7 @@
 ### 数组(array)
 
 # chapter3 程序结构
-=======
+
 - 编译器可以推导量的类型:`val string="Hello"`//推导出String类型 `val int=5`//Int类型 `var x=getString()+5` //String类型
 
 ### 函数(function)
@@ -347,5 +344,46 @@ sum(arg1=2,arg2=3)
 ### 导出可执行程序
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter3/image/8.PNG)<br>
->>>>>>> chapter3
+
+# chapter4 面向对象
+### 面向对象-抽象类与接口(abstract,interface)
+1.面向对象的基本概念<br>
+- 本质上就是解决如何用程序描述世界的的问题
+- 讨论如何把实际存在的东西映射成程序的类和对象
+- 一种程序设计的思路、思想、方法
+- 程序设计层面的概念
+- 设计模式:前人的程序设计经验
+
+2.抽象类和接口<br>
+(1)什么是接口<br>
+- 接口,直观理解就是一种约定 Kotlin的接口与Objective-C的Protocol比较类似
+- 举例,输入设备接口
+
+```
+interface InputDevice{
+	fun input(event:Any)
+}
+```
+(2)接口<br>
+- 不能有状态
+- 必须由类对其进行实现后使用
+
+3.抽象类<br>
+- 实现了一部分协议的半成品
+- 可以有状态,可以有方法实现
+- 必须由子类继承后使用
+
+4.抽象类和接口的共性<br>
+- 比较抽象,不能直接实例化
+- 有需要子类(实现类)实现的方法
+- 父类(接口)变量可以接受子类(实现类)的实例赋值
+
+5.抽象类和接口的区别<br>
+- 抽象类有状态,接口没有状态
+- 抽象类有方法实现,接口只能有无状态的默认实现
+- 抽象类只能单继承,接口可以多实现
+- 抽象类反映本质,接口体现能力
+
+
+
 
