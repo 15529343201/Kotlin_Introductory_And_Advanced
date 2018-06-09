@@ -446,6 +446,26 @@ val X.m注意扩展属性不能初始化,类似接口属性
 - 代理者需要实现相应的`setValue/getValue`方法
 - lazy原理剖析
 
+### 数据类(allOpen,noArg插件,再见,javaBean)
+- 再见,JavaBean
+- 默认实现的copy、toString等方法
+- componentN方法
+- allOpen和noArg插件
+
+### 内部类(this@Outter,this@Inner)
+1.内部类<br>
+- 定义在类内部的类
+- 与类成员有相似的访问控制
+- 默认是静态内部类,非静态用inner关键字
+- `this@Outter,this@Inner的用法`
+
+2.匿名内部类<br>
+- 没有定义名字的内部类
+- 类名编译时生成,类似`Outter$1.class`
+- 可继承父类、实现多个接口,与Java注意区别
+
+
+
 
 
 
