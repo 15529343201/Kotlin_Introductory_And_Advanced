@@ -431,3 +431,12 @@ public                         public
 - 二者的相关性以及`@JvmOverloads`
 - 避免定义关系不大的重载
 - 不好的设计:`List.remove(int)` `List.remove(Object)`
+
+### 扩展成员
+- 为现有类添加方法、属性
+
+```
+fun X.y():z{...}
+val X.m注意扩展属性不能初始化,类似接口属性
+```
+- Java调用扩展成员类似调用静态方法
