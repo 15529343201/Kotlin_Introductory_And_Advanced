@@ -440,3 +440,16 @@ fun X.y():z{...}
 val X.m注意扩展属性不能初始化,类似接口属性
 ```
 - Java调用扩展成员类似调用静态方法
+
+### 属性代理
+- 定义方法:`val/var <property name>:<Type> by <expression>`
+- 代理者需要实现相应的`setValue/getValue`方法
+- lazy原理剖析
+
+
+
+
+
+
+
+
