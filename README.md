@@ -470,6 +470,18 @@ v1.1,子类只需要与密封类在同一个文件中
 ```
 - 仔细体会与枚举的不同
 
+# chapter5 高阶函数
+### 高阶函数的基本概念f(g(x))
+- 传入或者返回函数的函数
+- 函数引用:`::println`
+- 带有Receiver的引用`pdfPrinter::println`
+
+### 常见高阶函数
+- `map/flatMap`
+- `fold/reduce`
+- `filter/takeWhile`
+- `let/apply/with/use`
+
 
 
 
