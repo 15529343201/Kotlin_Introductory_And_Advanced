@@ -122,7 +122,10 @@
 ### 包(package)
 ### 区间(range)
 ### 数组(array)
+<<<<<<< HEAD
 
+=======
+>>>>>>> chapter4
 
 # chapter3 程序结构
 ### 常量与变量(val,var)
@@ -141,6 +144,10 @@
 ### 数组(array)
 
 # chapter3 程序结构
+<<<<<<< HEAD
+=======
+
+>>>>>>> chapter4
 - 编译器可以推导量的类型:`val string="Hello"`//推导出String类型 `val int=5`//Int类型 `var x=getString()+5` //String类型
 
 ### 函数(function)
@@ -337,4 +344,156 @@ sum(arg1=2,arg2=3)
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter3/image/8.PNG)<br>
 
+<<<<<<< HEAD
+=======
+# chapter4 面向对象
+### 面向对象-抽象类与接口(abstract,interface)
+1.面向对象的基本概念<br>
+- 本质上就是解决如何用程序描述世界的的问题
+- 讨论如何把实际存在的东西映射成程序的类和对象
+- 一种程序设计的思路、思想、方法
+- 程序设计层面的概念
+- 设计模式:前人的程序设计经验
+
+2.抽象类和接口<br>
+(1)什么是接口<br>
+- 接口,直观理解就是一种约定 Kotlin的接口与Objective-C的Protocol比较类似
+- 举例,输入设备接口
+
+```
+interface InputDevice{
+	fun input(event:Any)
+}
+```
+(2)接口<br>
+- 不能有状态
+- 必须由类对其进行实现后使用
+
+3.抽象类<br>
+- 实现了一部分协议的半成品
+- 可以有状态,可以有方法实现
+- 必须由子类继承后使用
+
+4.抽象类和接口的共性<br>
+- 比较抽象,不能直接实例化
+- 有需要子类(实现类)实现的方法
+- 父类(接口)变量可以接受子类(实现类)的实例赋值
+
+5.抽象类和接口的区别<br>
+- 抽象类有状态,接口没有状态
+- 抽象类有方法实现,接口只能有无状态的默认实现
+- 抽象类只能单继承,接口可以多实现
+- 抽象类反映本质,接口体现能力
+
+### 继承
+- 父类需要open才可以被继承
+- 父类方法、属性需要open才可以被覆写
+- 接口、接口方法、抽象类默认为open
+- 覆写父类(接口)成员需要override关键字
+- `class D:A(),B,C`
+- 注意继承类时实际上调用了父类构造方法
+- 类只能单继承,接口可以多实现
+- 接口代理:`class Manager(driver:Driver):Driver by driver`
+- 接口方法实现交给代理类实现
+- 接口冲突:接口方法可以有默认实现
+- 签名一致且返回值相同的冲突
+- 子类(实现类)必须覆写冲突方法
+- `super<[父类(接口)名]>.[方法名]([参数列表])`
+
+### 类及其成员的可见性(private,protected,internal,public)
+可见性对比:<br>
+```
+Kotlin                         Java
+private                        private
+protected                      protected
+-                              default(包内可见)
+internal(模块内可见)           -
+public                         public
+```
+
+### object
+- 只有一个实例的类
+- 不能自定义构造方法
+- 可以实现接口、继承父类
+- 本质上就是单例模式最基本的实现
+
+### 伴生对象与静态成员
+- 每个类可以对应一个伴生对象
+- 伴生对象的成员全局独一份
+- 伴生对象的成员类似Java的静态成员
+- 静态成员考虑用包级函数、变量替代
+- JvmField和JvmStatic的使用
+
+### 方法重载与默认参数
+1.方法重载<br>
+- Overloads
+- 名称相同、参数不同的方法
+- Jvm函数签名的概念:函数名、参数列表
+- 跟返回值没有关系
+
+2.默认参数<br>
+- 为函数参数设定一个默认值
+- 可以为任意位置的参数设置默认值
+- 函数调用产生混淆时用具名参数
+ 
+3.方法重载与默认参数<br>
+- 二者的相关性以及`@JvmOverloads`
+- 避免定义关系不大的重载
+- 不好的设计:`List.remove(int)` `List.remove(Object)`
+
+### 扩展成员
+- 为现有类添加方法、属性
+
+```
+fun X.y():z{...}
+val X.m注意扩展属性不能初始化,类似接口属性
+```
+- Java调用扩展成员类似调用静态方法
+
+### 属性代理
+- 定义方法:`val/var <property name>:<Type> by <expression>`
+- 代理者需要实现相应的`setValue/getValue`方法
+- lazy原理剖析
+
+### 数据类(allOpen,noArg插件,再见,javaBean)
+- 再见,JavaBean
+- 默认实现的copy、toString等方法
+- componentN方法
+- allOpen和noArg插件
+
+### 内部类(this@Outter,this@Inner)
+1.内部类<br>
+- 定义在类内部的类
+- 与类成员有相似的访问控制
+- 默认是静态内部类,非静态用inner关键字
+- `this@Outter,this@Inner的用法`
+
+2.匿名内部类<br>
+- 没有定义名字的内部类
+- 类名编译时生成,类似`Outter$1.class`
+- 可继承父类、实现多个接口,与Java注意区别
+
+### 枚举(enum)
+- 实例可数的类,注意枚举也是类
+- 可以修改构造,添加成员
+- 可以提升代码的表现力,也有一定的性能开销
+
+### 密封类(sealed Class)
+- 子类可数
+
+```
+<v1.1,子类必须定义为密封类的内部类
+v1.1,子类只需要与密封类在同一个文件中
+```
+- 仔细体会与枚举的不同
+
+
+
+
+
+
+
+
+
+>>>>>>> chapter4
 
