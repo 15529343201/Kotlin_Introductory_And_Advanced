@@ -242,5 +242,41 @@ set(value){field = value}
 - var用lateinit延迟初始化,val用lazy
 - 可空类型谨慎用null直接初始化
 
+### 基本运算符
+1.基本运算符<br>
+- 任何类可以定义或者重载父类的基本运算符
+- 通过运算符对应的具名函数来定义
+- 对参数个数做要求,对参数和返回值类型不作要求
+- 不能像Scala一样定义任意运算符
+
+### 表达式(中缀表达式,分支表达式,when表达式)
+1.中缀表达式<br>
+- 只有一个参数,且用infix修饰的函数
+- 举例
+
+```
+class Book{infix fun on(place:String){...}}
+Book() on "My Desk"
+```
+
+2.分支表达式<br>
+(1)if表达式:<br>
+- if ... else 
+```
+if(a==b) ... else if(a==c) ... else ...
+```
+
+- 表达式与完备性
+```
+val x=if(b<0) 0 else b
+val x=if(b<0) 0 //错误,赋值时,分支必须完备
+```
+
+3.When表达式<br>
+- 加强版switch,支持任意类型
+- 支持纯表达式条件分支(类似if)
+- 表达式与完备性
+
+
 
 
