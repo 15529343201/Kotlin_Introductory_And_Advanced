@@ -277,6 +277,39 @@ val x=if(b<0) 0 //错误,赋值时,分支必须完备
 - 支持纯表达式条件分支(类似if)
 - 表达式与完备性
 
+### 循环语句(for,while,continue,break)
+1.for循环<br>
+- `for(element in elements) ...`
+- 给任意类实现Iterator方法
+
+2.While循环<br>
+- 古董级语法
+- do ... while(...) ...
+- while(...) ...
+
+3.跳过和终止循环<br>
+- 跳过当前循环用continue
+- 终止循环用break
+- 多层循环嵌套的终止结合标签使用
+
+``` 
+Outter@for(...){
+	Inner@while(i<0){ if(...) break@Outter}
+}
+```
+
+### 异常捕获(try,catch,finally)
+1.try...catch:<br>
+- catch分支匹配异常类型
+- 表达式,可以用来赋值
+
+2.finally<br>
+- finally无论代码是否抛出异常都会执行
+- 注意下面的写法:
+
+```
+return try{x/y} catch(e:Exception){0} finally{...}
+```
 
 
 
