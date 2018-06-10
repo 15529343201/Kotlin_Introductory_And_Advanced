@@ -587,6 +587,34 @@ v1.1,子类只需要与密封类在同一个文件中
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/12.PNG)<br>
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/13.PNG)<br>
 
+# chapter8 Kotlin与Java混合开发
+### 基本互操作
+1.属性读写<br>
+- Kotlin自动识别Java Getter/Setter
+- Java操作Kotlin属性通过Getter/Setter
 
+2.空安全类型<br>
+- Kotlin空安全类型的原理
+- 平台类型Platform Type
+- `@Nullable和@NotNull`
 
+3.基类函数的调用<br>
+- 包级函数:静态方法
+- 扩展方法:带Receiver的静态方法
+- 运算符重载:带Receiver的对应名称的静态方法
 
+4.几个常用注解的使用<br>
+- `@JvmField`:将属性编译为Java变量
+- `@JvmStatic`:将对象的方法编译成Java静态方法
+- `@JvmOverloads`:默认参数生成重载方法
+- `@file:JvmName`:指定Kotlin文件编译后的类名
+
+5.NoArg与AllOpen<br>
+- NoArg为被标注的类生成无参构造 支持Jpa注解,如`@Entity`
+- AllOpen为被标注的类去掉final,允许被继承 支持Spring注解,如`@Component`
+- 支持自定义注解类型,例如`@PoKo`
+
+6.泛型<br>
+- `通配符Kotlin的*对应于Java的?`
+- `协变和逆变out/in   - ArrayList<out String>`
+- `没有Raw类型   - Java的List->Kotlin的List<*>`
