@@ -618,3 +618,14 @@ v1.1,子类只需要与密封类在同一个文件中
 - `通配符Kotlin的*对应于Java的?`
 - `协变和逆变out/in   - ArrayList<out String>`
 - `没有Raw类型   - Java的List->Kotlin的List<*>`
+
+### SAM转换
+- `Single Abstract Method`
+- `SAM转换的条件  - Java的接口,单一接口方法`
+- `注意转换后的实例变化`
+
+### 正则表达式
+- 用Raw字符串定义正则表达式
+- Java的Pattern
+- Kotlin的Regex
+
