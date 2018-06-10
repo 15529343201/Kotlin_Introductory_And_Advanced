@@ -584,6 +584,8 @@ v1.1,子类只需要与密封类在同一个文件中
 
 2.主要模块<br>
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/11.PNG)<br>
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/12.PNG)<br>
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/13.PNG)<br>
 
 
 
