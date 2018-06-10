@@ -658,6 +658,8 @@ v1.1,子类只需要与密封类在同一个文件中
 - `Android应用开发  - Kotlin目前的主要战场`
 - `Native程序  - 直接编译Kotlin代码为机器码,不依赖Jvm  - 支持与c代码交互   -技术预览版功能有限,前途无量` 
 
+kotlin-native源码:https://github.com/JetBrains/kotlin-native<br>
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter9/image/15.PNG)<br>
 
 
 
