@@ -564,8 +564,18 @@ v1.1,子类只需要与密封类在同一个文件中
 - `CoroutineContext接口` 运行上下文,资源持有,运行调度
 - `ContinuationInterceptor接口` 协程控制拦截器 可用来处理协程调度
 
+### 协程的原理剖析
+1.执行流程<br>
+- 协程被编译成状态机
+- suspend函数即状态转移
 
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/9.PNG)<br>
 
+2.运行结果<br>
+- 正常的结果通过resume返回
+- 异常通过resumeWithException抛出
+
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/10.PNG)<br>
 
 
 
