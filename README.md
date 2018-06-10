@@ -650,6 +650,16 @@ v1.1,子类只需要与密封类在同一个文件中
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter8/image/14.PNG)<br>
 
+# chapter9 Kotlin的应用与展望
+### Kotlin的应用场景
+- `Kotlin Script  - Gradle脚本,Gradle3.0开始部分支持,尚在完善中`
+- `Java虚拟机应用  - Web应用,完美支持  - JavaFx,完美支持`
+- `前端开发  - 1.1开始正式支持Kotlin-JavaScript`
+- `Android应用开发  - Kotlin目前的主要战场`
+- `Native程序  - 直接编译Kotlin代码为机器码,不依赖Jvm  - 支持与c代码交互   -技术预览版功能有限,前途无量` 
+
+
+
 
 
 
