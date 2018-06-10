@@ -577,6 +577,14 @@ v1.1,子类只需要与密封类在同一个文件中
 
 ![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/10.PNG)<br>
 
+### Kotlinx.coroutine框架介绍
+1.框架简介<br>
+- Kotlin官方协程应用框架
+- 提供大量对协程API的封装
+
+2.主要模块<br>
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter7/image/11.PNG)<br>
+
 
 
 
