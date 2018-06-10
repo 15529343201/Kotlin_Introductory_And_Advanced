@@ -648,6 +648,8 @@ v1.1,子类只需要与密封类在同一个文件中
 - `注意添加生成的代码到SourceSets`
 - `注意IntelliJ暂时还不支持注解处理器的编译`
 
+![image](https://github.com/15529343201/Kotlin_Introductory_And_Advanced/blob/chapter8/image/14.PNG)<br>
+
 
 
 
