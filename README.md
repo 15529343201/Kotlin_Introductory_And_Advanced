@@ -629,3 +629,18 @@ v1.1,子类只需要与密封类在同一个文件中
 - Java的Pattern
 - Kotlin的Regex
 
+### 集合框架
+- Kotlin到Java的类型映射
+- 不可变与可变集合接口
+- 部分接口优化
+
+### IO操作
+- `File,Stream,Reader,Writer的扩展方法`
+- `使用use扩展自动关闭资源`
+- `小文件一次性读写操作`
+
+
+
+
+
+
